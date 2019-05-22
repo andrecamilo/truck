@@ -2,6 +2,8 @@
 # Truck
 A solução foi feita no **Visual Studio 2017**, usando **.NET Core 2.2**
 
+## Comandos do teclado
+As teclas númericas utilizadas para escolha dos itens no console deverão ser os números acima das letras e abaixo das teclas de função (F1, F2, ...) do teclado. Pois o código interno de cada tecla é diferente do teclado númerico. 
 
 ## Estrutura principal
 A composição dos projetos da solução seguem os seguintes padrões:
