@@ -1,0 +1,23 @@
+﻿###############################
+# Core EditorConfig Options   #
+###############################
+
+root = true
+
+###############################
+# .NET Coding Conventions     #
+###############################
+
+[*.cs]
+# var keyword
+csharp_style_var_for_built_in_types = true:warning
+csharp_style_var_when_type_is_apparent = true:warning
+csharp_style_var_elsewhere = true:warning
+
+# new lines
+csharp_new_line_before_open_brace = types
+csharp_new_line_before_else = false
+csharp_new_line_before_catch = false
+csharp_new_line_before_finally = false
+csharp_new_line_before_members_in_object_initializers = false
+csharp_new_line_before_members_in_anonymous_types = false
