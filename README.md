@@ -2,6 +2,20 @@
 # Truck
 A solução foi feita no **Visual Studio 2017**, usando **.NET Core 2.2**
 
+## Itens para escolha
+
+Os seguintes itens serão disponibilizados para iniciar cada fluxo do sistema:
+    1. Inserir um Caminhão
+    2. Editar um Caminhão existente
+    3. Deletar um Caminhão existente
+    4. Listar todos os Caminhãos
+    5. Encontrar um Caminhão por chassi
+    0. Sair
+
+
+## Instruções para Debug
+Para rodar o sistema pelo Visual Studio 2017, o projeto `Truck.Presentation.Console` deverá ser marcado como start up project, `Set As StartUp Project`.
+
 ## Comandos do teclado
 As teclas númericas utilizadas para escolha dos itens no console deverão ser os números acima das letras e abaixo das teclas de função (F1, F2, ...) do teclado. Pois o código interno de cada tecla é diferente do teclado númerico. 
 
