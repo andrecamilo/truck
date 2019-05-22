@@ -15,9 +15,11 @@ A composição dos projetos da solução seguem os seguintes padrões:
 ## Arquitetura da solução
 No projeto existem algumas premissas do DDD, como Bouded Contexts e CQS (register), onde as classes de Command são separados das classes de Query
 
-* **Repositorio de dados**: representada pelo projeto `Truck.Infra.Database`, declara as entidades, elementos de modelo auxiliares e o contexto do EntityFramework para manipulação da camada. Sua implementação não específica o banco de dados usado para persistência, ficando a cargo de quem for instanciar o contexto determinar.
-* **Camada de Serviço**: a camada de serviços cria uma abstração para as operações que podem ser realizadas na aplicação, e foi baseada no conceito de _Command/Query_. Cada ação que opera sobre o negócio é representado por um comando, e cada ação que consulte informações na camada de negócios é representada por uma Query.
-* **Camada da Apresentação**: é onde esta localizado o startup da aplicação console.
+* **Camada da Apresentação**: projeto `Truck.Presentation.Console`, é onde esta localizado o startup da aplicação console.
+* **Camada de Dominio**: projeto `Truck.Domain.Register` a camada de serviços cria uma abstração para as operações que podem ser realizadas na aplicação, e foi baseada no conceito de _Command/Query_. Cada ação que opera sobre o negócio é representado por um comando, e cada ação que consulte informações na camada de negócios é representada por uma Query.
+* **Infraestrutura - Repositorio de dados**: representada pelo projeto `Truck.Infra.Database`, declara as entidades, elementos de modelo auxiliares e o contexto do EntityFramework para manipulação da camada. Sua implementação não específica o banco de dados usado para persistência, ficando a cargo de quem for instanciar o contexto determinar.
+* **Infraestrutura - Helpers**: projeto `Truck.Infra.Helper`, contem interfaces e classes base.
+* **Testes**: projeto `Truck.Tests`, contem os testes das classes de domínio da solução
 
 Informações detalhadas sobre os elementos da arquitetura:
 
